@@ -1,7 +1,8 @@
 import serial
-
-serialPort = serial.Serial('/dev/ttyUSB0', 9600, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE)
-
+#linux
+#serialPort = serial.Serial('/dev/ttyUSB0', 9600, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE)
+#windows
+#serialPort = serial.Serial('COM3', 9600, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE)
 gcmd = bytearray([130,130,82,0,0,0,84,0])
 dcmd = bytearray([130,130,82,12,0,0,84,12])
 
